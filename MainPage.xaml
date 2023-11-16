@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+			 xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+			 x:Class="FlexLayoutTest.MainPage">
+
+    <ScrollView Orientation="Horizontal" Padding="5,10,5,10" Margin="0,0,0,20" HeightRequest="800">
+        <FlexLayout Direction="Column">
+            <StackLayout Orientation="Vertical">
+                <Label Text="Error" TextColor="Red" FontAttributes="Bold" WidthRequest="400" />
+                <StackLayout>
+                    <Label Text="Error" TextColor="Red" FontAttributes="Bold"/>
+                    <Label Text="Content" />
+                </StackLayout>
+                <StackLayout Orientation="Horizontal" Padding="5">
+                    <Button Text="Button 1" />
+                    <Button Text="Button 2" />
+                    <Button Text="Button 3" />
+                </StackLayout>
+            </StackLayout>
+            <ScrollView HeightRequest="500">
+                <FlexLayout MinimumWidthRequest="250" Direction="Column" Grow="1" HorizontalOptions="Fill">
+                    <Label Text="Text 1" />
+                    <Label Text="Text 2" />
+                    <Label Text="Text 3" />
+                </FlexLayout>
+            </ScrollView>
+        </FlexLayout>
+    </ScrollView>
+
+</ContentPage>
